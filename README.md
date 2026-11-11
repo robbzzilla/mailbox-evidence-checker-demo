@@ -2,7 +2,7 @@
 
 This sample shows how to compare redacted folder counts and alias destinations after a mailbox migration. The 28-second walkthrough uses fictional data and the checker output from the included sample.
 
-[Watch the walkthrough](https://github.com/robbzzilla/mailbox-evidence-checker-demo/releases/tag/demo-v1)
+[Watch the walkthrough](https://github.com/robbzzilla/mailbox-evidence-checker-demo/releases/tag/demo-v1) | [Read the sample report](sample-review.md)
 
 | Item | Expected | Observed |
 | --- | --- | --- |
