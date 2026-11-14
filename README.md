@@ -11,7 +11,7 @@ This sample shows how to compare redacted folder counts and alias destinations a
 | F02 | No skipped items | One skipped item |
 | F03 | Destination count available | Destination count missing |
 
-A comparison depends on the administrator supplying complete reports taken at the same cutoff. Confirm message integrity and live delivery separately.
+A comparison depends on the administrator supplying complete reports taken at the same cutoff. A blank alias destination leaves the mapping unverified. A complete destination export can establish that an alias is absent. Confirm message integrity and live delivery separately.
 
 ## Fixed-price mailbox migration review
 
