@@ -17,4 +17,12 @@ A comparison depends on the administrator supplying complete reports taken at th
 
 For a Google Workspace to Microsoft 365 cutover, I review one batch of up to five mailboxes for **$250 USD**. The written report flags folder count differences, unresolved migration skips, and incorrect alias destinations. It includes one recheck. Delivery is within two business days of receiving the agreed redacted inputs.
 
-[Request a written scope](mailto:orderreliabilitysprint@gmail.com?subject=GitHub%20mailbox%20review). Include the planned cutover date, number of mailboxes, and whether your administrator can export folder counts and alias mappings. Keep credentials, addresses, and raw mailbox reports out of the inquiry. The administrator runs any live delivery checks.
+[Request a written scope](mailto:orderreliabilitysprint@gmail.com?subject=GitHub%20mailbox%20review). Include the planned cutover date, the number of mailboxes, and which of the records below your administrator can export. Keep credentials, addresses, and raw mailbox reports out of the inquiry.
+
+### Records to have ready
+
+- Source and destination item counts for each folder being compared, taken at the same reporting cutoff.
+- The migration report’s skipped-item counts and any approved exclusions.
+- Expected and observed alias destinations, using substitute labels.
+
+We agree the exact batch and how to share the redacted records in writing before you send them. The administrator runs any live delivery checks.
