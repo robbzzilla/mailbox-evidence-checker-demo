@@ -4,6 +4,9 @@ This sample shows how to compare redacted folder counts and alias destinations a
 
 [Watch the walkthrough](https://github.com/robbzzilla/mailbox-evidence-checker-demo/releases/tag/demo-v1) | [Read the sample report](sample-review.md) | [See fictional checker results (PNG)](https://github.com/robbzzilla/mailbox-evidence-checker-demo/releases/download/demo-v1/Mailbox.Evidence.Checker.Preview.png)
 
+
+[Request the $39 offline checker](#request-the-offline-checker-for-your-team) · [Request a $250 written review](#fixed-price-mailbox-migration-review)
+
 | Item | Expected | Observed |
 | --- | --- | --- |
 | F01 | 98 destination items after two approved exclusions | 98 items |
@@ -22,6 +25,7 @@ For a Google Workspace to Microsoft 365 cutover, I review one batch of up to fiv
 ### Records to have ready
 
 - Source and destination item counts for each folder being compared, taken at the same reporting cutoff.
+- The approved mapping of Gmail labels to destination folders. Keep Outlook categories separate from folder totals.
 - The migration report’s skipped-item counts and any approved exclusions.
 - Expected and observed alias destinations, using substitute labels.
 
