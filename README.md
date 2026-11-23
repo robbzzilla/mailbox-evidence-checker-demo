@@ -1,6 +1,6 @@
 # Mailbox Migration Evidence Checker Demo
 
-This sample shows how to compare redacted folder counts and alias destinations after a mailbox migration. The 28-second walkthrough uses fictional data and the checker output from the included sample.
+This sample shows how to compare redacted folder counts and alias destinations after a mailbox migration. The 28-second walkthrough shows all four fictional checks. The sample ZIP includes the full written report and the JSON input and output for two of those checks.
 
 [Watch the walkthrough](https://github.com/robbzzilla/mailbox-evidence-checker-demo/releases/tag/demo-v1) | [Read the sample report](sample-review.md) | [Download the fictional sample (ZIP)](https://github.com/robbzzilla/mailbox-evidence-checker-demo/releases/download/demo-v1/Mailbox-Evidence-Checker-Fictional-Sample.zip) | [See fictional checker results (PNG)](https://github.com/robbzzilla/mailbox-evidence-checker-demo/releases/download/demo-v1/Mailbox.Evidence.Checker.Preview.png)
 
@@ -35,7 +35,7 @@ We agree on the batch, review contact, payment terms, and how to share redacted 
 
 ## Request the offline checker for your team
 
-If your team wants to run its own evidence checks, request a one-time **$39 USD** purchase for internal use. The ZIP includes the offline checker, setup instructions, fictional inputs, and an expected JSON report. It requires Python 3.11 or later and reads a JSON file. Before ordering, check that your redacted reports can supply the [fields in the example JSON file](sample-review.md#check-your-export-fields). See the [JSON output for that fictional input](sample-result.json) before preparing your own file and running the checker locally.
+If your team wants to run its own evidence checks, request a one-time **$39 USD** purchase for internal use. The ZIP includes the offline checker, setup instructions, fictional inputs, and an expected JSON report. It requires Python 3.11 or later and reads a JSON file. After unpacking the checker, run `python mailbox_review.py --demo` to reproduce all four fictional results before reviewing your own data. Before ordering, check that your redacted reports can supply the [fields in the example JSON file](sample-review.md#check-your-export-fields). See the [JSON output for that fictional input](sample-result.json) before preparing your own file and running the checker locally.
 
 The $39 offer covers one organization checking its own migration. If you plan to use the checker for client work, describe that use in your request so we can confirm terms before you order.
 
