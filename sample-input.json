@@ -1,0 +1,24 @@
+{
+  "source_cutoff": "2026-11-11T18:00:00Z",
+  "target_cutoff": "2026-11-11T12:00:00-06:00",
+  "checks": [
+    {
+      "mailbox": "M01",
+      "kind": "folder",
+      "item": "F02",
+      "coverage_confirmed": true,
+      "source_count": 100,
+      "approved_exclusions": 2,
+      "target_count": 98,
+      "skipped_items": 1
+    },
+    {
+      "mailbox": "M01",
+      "kind": "alias",
+      "item": "A01",
+      "coverage_confirmed": true,
+      "expected_target": "M01",
+      "observed_target": "M02"
+    }
+  ]
+}

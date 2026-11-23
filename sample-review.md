@@ -24,6 +24,8 @@ The recheck covers these three items. Folder counts show aggregate agreement for
 This fictional input comes from the checker's example batch. The two
 timestamps use different offsets for the same reporting cutoff.
 
+[View or download the fictional JSON input](sample-input.json).
+
 ```json
 {
   "source_cutoff": "2026-11-11T18:00:00Z",
