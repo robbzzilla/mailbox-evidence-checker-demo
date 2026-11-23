@@ -38,15 +38,30 @@ timestamps use different offsets for the same reporting cutoff.
       "approved_exclusions": 2,
       "target_count": 98,
       "skipped_items": 1
+    },
+    {
+      "mailbox": "M01",
+      "kind": "alias",
+      "item": "A01",
+      "coverage_confirmed": true,
+      "expected_target": "M01",
+      "observed_target": "M02"
     }
   ]
 }
 ```
 
-The sample result is **review skips**. The expected and observed counts
-are both 98, and the migration report still has one skipped item to review.
-Use `coverage_confirmed: true` only after checking that the records cover
-the same folder and cutoff. Keep real mailbox addresses and records out
+The **F02** result is **review skips**. Both counts are 98, and the
+migration report still has one skipped item to review. **A01** is an
+**exception** because it points to M02 instead of the approved M01.
+Use substitute labels for both alias destinations. Use `null` when the
+observed destination is missing from the evidence. Use `MISSING_ALIAS`
+only when a complete export confirms that the alias is absent.
+
+Set `coverage_confirmed` to true after checking that both records cover
+the same item and cutoff. Keep real mailbox addresses and records out
 of your first message.
 
 [Request a written review scope](README.md#fixed-price-mailbox-migration-review)
+
+[Request the $39 offline checker](README.md#request-the-offline-checker-for-your-team)
