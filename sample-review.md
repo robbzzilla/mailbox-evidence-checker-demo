@@ -24,7 +24,7 @@ The recheck covers these three items. Folder counts show aggregate agreement for
 This fictional input comes from the checker's example batch. The two
 timestamps use different offsets for the same reporting cutoff.
 
-[View or download the fictional JSON input](sample-input.json).
+[View the fictional JSON input](sample-input.json) · [View the checker's JSON output](sample-result.json).
 
 ```json
 {

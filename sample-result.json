@@ -1,0 +1,22 @@
+{
+  "same_cutoff": true,
+  "findings": [
+    {
+      "mailbox": "M01",
+      "kind": "folder",
+      "item": "F02",
+      "status": "review skips",
+      "expected": 98,
+      "observed": 98,
+      "skipped_items": 1
+    },
+    {
+      "mailbox": "M01",
+      "kind": "alias",
+      "item": "A01",
+      "status": "exception",
+      "expected": "M01",
+      "observed": "M02"
+    }
+  ]
+}
