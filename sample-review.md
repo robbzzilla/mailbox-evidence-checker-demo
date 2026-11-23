@@ -18,3 +18,35 @@ Fictional example from Order Reliability Sprint. One mailbox reviewed at the Nov
 3. Provide the destination count for F03 at the agreed reporting cutoff.
 
 The recheck covers these three items. Folder counts show aggregate agreement for the reviewed folders. The migration administrator verifies message integrity and live mail flow.
+
+## Check your export fields
+
+This fictional input comes from the checker's example batch. The two
+timestamps use different offsets for the same reporting cutoff.
+
+```json
+{
+  "source_cutoff": "2026-11-11T18:00:00Z",
+  "target_cutoff": "2026-11-11T12:00:00-06:00",
+  "checks": [
+    {
+      "mailbox": "M01",
+      "kind": "folder",
+      "item": "F02",
+      "coverage_confirmed": true,
+      "source_count": 100,
+      "approved_exclusions": 2,
+      "target_count": 98,
+      "skipped_items": 1
+    }
+  ]
+}
+```
+
+The sample result is **review skips**. The expected and observed counts
+are both 98, and the migration report still has one skipped item to review.
+Use `coverage_confirmed: true` only after checking that the records cover
+the same folder and cutoff. Keep real mailbox addresses and records out
+of your first message.
+
+[Request a written review scope](README.md#fixed-price-mailbox-migration-review)
