@@ -64,6 +64,8 @@ Set `coverage_confirmed` to true after checking that both records cover
 the same item and cutoff. Keep real mailbox addresses and records out
 of your first message.
 
-[Request a written review scope](README.md#fixed-price-mailbox-migration-review)
+## Use this review for your cutover
 
-[Request the $39 offline checker](README.md#request-the-offline-checker-for-your-team)
+[Request the $250 written review](README.md#fixed-price-mailbox-migration-review) for one Google Workspace to Microsoft 365 migration batch of up to five mailboxes. You receive a findings report and one recheck. In your first inquiry, include the cutoff and the reports you have. Keep the records with your administrator until we agree on how to share redacted evidence.
+
+[Request the $39 offline checker](README.md#request-the-offline-checker-for-your-team) if your team will run the checks locally for its own migration. The ZIP includes the runnable Python checker and fictional data so your team can reproduce the results before using its own redacted reports.
