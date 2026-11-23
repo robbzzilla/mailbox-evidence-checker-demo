@@ -24,7 +24,7 @@ For a Google Workspace to Microsoft 365 cutover, I review one batch of up to fiv
 
 ### Records to have ready
 
-- Source and destination item counts for each folder being compared, taken at the same reporting cutoff.
+- Source and destination message counts for each mapped folder, taken at the same reporting cutoff. A Gmail conversation can contain several messages, so use counts of individual messages on both sides.
 - The approved mapping of Gmail labels to destination folders. Keep Outlook categories separate from folder totals.
 - The migration report’s skipped-item counts and any approved exclusions.
 - Expected and observed alias destinations, using substitute labels.
