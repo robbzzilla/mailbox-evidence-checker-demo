@@ -18,6 +18,8 @@ A comparison depends on the administrator supplying complete reports taken at th
 
 ## Fixed-price mailbox migration review
 
+[Share the fixed-price scope with your approver](MAILBOX-REVIEW.md).
+
 For a Google Workspace to Microsoft 365 cutover, I review one batch of up to five mailboxes for **$250 USD**. The written report flags folder count differences, unresolved migration skips, and incorrect alias destinations. It includes one recheck. Delivery is within two business days after written scope approval and receipt of the complete agreed redacted inputs.
 
 If your cutover involves a third-party mailbox you use through Gmail,
