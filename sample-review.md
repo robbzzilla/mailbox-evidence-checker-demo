@@ -76,6 +76,22 @@ An alias address can belong to a shared mailbox, a group, a mail contact, or ano
 
 For fictional alias A10, the expected destination is mailbox M01. If a mailbox-only export shows no match, use `null` and set `coverage_confirmed` to false. If the administrator confirms that A10 instead belongs to group G07, use `G07` with confirmed coverage and the checker will report an **exception**. Keep conflicting exports **unverified** until the administrator resolves them. Use `MISSING_ALIAS` after the administrator establishes absence across the agreed recipient scope.
 
+## Review an Amazon WorkMail cutover
+
+AWS ends support for Amazon WorkMail on March 31, 2027. Before retiring the source, have your administrator capture folder counts and alias mappings for the users, groups and resources in your migration. Compare the source and destination evidence at an agreed cutoff. [AWS end-of-support notice](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html) · [AWS alias inventory reference](https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListAliases.html)
+
+These findings came from running a separate fictional WorkMail migration example through the packaged checker.
+
+| Item | Finding | Evidence |
+| --- | --- | --- |
+| A01 | Matched | The alias points to the expected group G01. |
+| A02 | Exception | The alias points to mailbox M02. The approved destination is group G01. |
+| A03 | Unverified | The destination export covers mailboxes only. Group alias coverage is unconfirmed. |
+| A04 | Exception | A complete destination inventory confirms the alias for resource R01 is absent. |
+| F01 | Review skips | The destination has all 103 expected items after exclusions. The migration report records one skip to review. |
+
+Use substitute labels and prepare the [normalized JSON input](#check-your-export-fields) from administrator reports. Your administrator verifies individual messages and live delivery. [Request the $39 offline checker for your organization](README.md#request-the-offline-checker-for-your-team).
+
 ## Use this review for your cutover
 
 [Request the $250 written review](README.md#fixed-price-mailbox-migration-review) for one Google Workspace to Microsoft 365 migration batch of up to five mailboxes. You receive a findings report and one recheck. In your first inquiry, include the cutoff and the reports you have. Keep the records with your administrator until we agree on how to share redacted evidence.
