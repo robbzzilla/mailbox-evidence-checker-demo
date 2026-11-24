@@ -50,6 +50,8 @@ recorded skips and alias destinations at a shared cutoff. Your administrator
 exports and normalizes those records. If you want a written findings report
 and one recheck, [request the $250 review](#fixed-price-mailbox-migration-review).
 
+Moving from Amazon WorkMail? [See the tested cutover example](sample-review.md#review-an-amazon-workmail-cutover).
+
 1. [Check the required export fields](sample-review.md#check-your-export-fields) and [read the fictional JSON output](sample-result.json) before ordering.
 2. Use the written purchase request below. We agree on the license and billing in writing, then send the ZIP once payment is confirmed under those terms.
 3. Unpack the ZIP and run `python mailbox_review.py --demo` to reproduce all four fictional results before running the checker on your own redacted JSON.
