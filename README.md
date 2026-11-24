@@ -44,7 +44,7 @@ We agree on the batch, review contact, payment terms, and how to share redacted 
 
 ## Request the offline checker for your team
 
-The one-time **$39 USD** purchase covers the offline Python checker for one organization’s internal use. The ZIP includes setup instructions, fictional inputs, and an expected JSON report. It requires Python 3.11 or later.
+The one-time **$39 USD** purchase covers the offline Python checker for one organization’s internal use. The ZIP includes setup instructions, fictional inputs, and an expected JSON report. It requires Python 3.11 or later. The bundled sample and demo ran successfully on Windows with Python 3.11, 3.12, and 3.14.
 
 **Prepare the input before ordering.** The checker reads one JSON file
 that your team prepares from its reports. It needs mapped folder counts,
