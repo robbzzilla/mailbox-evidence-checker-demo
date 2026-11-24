@@ -46,17 +46,16 @@ We agree on the batch, review contact, payment terms, and how to share redacted 
 
 The one-time **$39 USD** purchase covers the offline Python checker for one organization’s internal use. The ZIP includes setup instructions, fictional inputs, and an expected JSON report. It requires Python 3.11 or later. The bundled sample and demo ran successfully on Windows with Python 3.11, 3.12, and 3.14.
 
-**Prepare the input before ordering.** The checker reads one JSON file
-that your team prepares from its reports. It needs mapped folder counts,
-recorded skips and alias destinations at a shared cutoff. Your administrator
-exports and normalizes those records. If you want a written findings report
-and one recheck, [request the $250 review](#fixed-price-mailbox-migration-review).
+Use it after your administrator has exported and normalized mapped folder
+counts, skipped items, and alias destinations at a shared cutoff. The
+checker reads one JSON file locally and requires no mailbox sign-in.
+For a written findings report and one recheck, [request the $250 review](#fixed-price-mailbox-migration-review).
 
 Moving from Amazon WorkMail? [See the tested cutover example](sample-review.md#review-an-amazon-workmail-cutover).
 
-1. [Check the required export fields](sample-review.md#check-your-export-fields) and [read the fictional JSON output](sample-result.json) before ordering.
+1. Before ordering, [open the two-check sample input](sample-input.json) and [compare the expected findings](sample-result.json). Use the [export checklist](sample-review.md#check-your-export-fields) to see if your reports cover the same fields.
 2. Use the written purchase request below. We agree on the license and billing in writing, then send the ZIP once payment is confirmed under those terms.
-3. Unpack the ZIP and run `python mailbox_review.py --demo` to reproduce all four fictional results before running the checker on your own redacted JSON.
+3. Unpack the ZIP and run `python mailbox_review.py --demo` for all four fictional checks. To reproduce the two-check example with the purchased checker, save the public sample input alongside the script and run `python mailbox_review.py --input sample-input.json`.
 
 **Verify the delivered file.** The current paid archive is
 `Mailbox Evidence Checker.zip` (4,074 bytes). Its SHA-256 is
