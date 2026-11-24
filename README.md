@@ -61,6 +61,16 @@ Moving from Amazon WorkMail? [See the tested cutover example](sample-review.md#r
 `7ad755c11254fdca316120316a60c782185a3de133fc4d33f5762ab99fd7eb44`. This fingerprint is for the purchased checker.
 The fictional sample ZIP linked above has its own fingerprint.
 
+On Windows, run this from the folder containing your purchased ZIP.
+
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath '.\Mailbox Evidence Checker.zip'
+```
+
+Compare the returned hash with the value above before extracting the ZIP.
+If it differs, reply in the purchase thread with the file name and observed
+hash so we can verify the delivery.
+
 For MSP client work, we confirm the permitted use and price in writing before you order.
 
 [Request a written purchase](mailto:orderreliabilitysprint@gmail.com?subject=Mailbox%20checker%20purchase&body=Hi%20Robert%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20a%20%2439%20purchase%20of%20the%20Mailbox%20Evidence%20Checker%20for%20our%20organization.%0D%0A%0D%0AOrganization%3A%0D%0AIntended%20use%20%28own%20migration%20or%20client%20work%29%3A%0D%0APurchase%20or%20billing%20contact%3A%0D%0AWhere%20did%20you%20find%20this%20offer%3F%20%28optional%29%3A) or email **orderreliabilitysprint@gmail.com** with the subject **Mailbox checker purchase**. Name your purchasing organization, intended use, and billing contact. Keep mailbox records and payment details out of the initial request.
