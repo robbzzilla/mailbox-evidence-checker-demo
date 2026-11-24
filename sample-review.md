@@ -61,8 +61,14 @@ observed destination is missing from the evidence. Use `MISSING_ALIAS`
 only when a complete export confirms that the alias is absent.
 
 Set `coverage_confirmed` to true after checking that both records cover
-the same item and cutoff. Keep real mailbox addresses and records out
-of your first message.
+the same item, count definition, and reporting cutoff. Keep real mailbox
+addresses and records out of your first message.
+
+### When a mailbox is split between primary and archive
+
+One migration administrator [reported a zero in a filtered archive export](https://zaclohrenz.com/posts/2026/aug12/) because the older messages landed in a separately named folder. Use the full destination folder inventory to map each primary or archive folder to its source date range. Compare matching, nonoverlapping ranges using the same timestamp definition and reporting cutoff.
+
+For example, if the source has 40 older messages and the destination export reports zero without confirming it covers the mapped archive folder, set `coverage_confirmed` to false. The checker reports **unverified**. A complete, comparable export that confirms zero reports an **exception**. [Exchange Online folder statistics](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-exomailboxfolderstatistics?view=exchange-ps) can include hidden items, so confirm what each report counts before treating the totals as comparable.
 
 ## Use this review for your cutover
 
