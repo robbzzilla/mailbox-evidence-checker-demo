@@ -64,6 +64,15 @@ Set `coverage_confirmed` to true after checking that both records cover
 the same item, count definition, and reporting cutoff. Keep real mailbox
 addresses and records out of your first message.
 
+### When one Gmail message lands in two folders
+
+Check each approved Gmail label against its mapped Exchange Online folder. Gmail can apply multiple labels to a message. Microsoft documents that a message with multiple labels can be copied to multiple folders during this migration.
+[Google’s label guide](https://developers.google.com/workspace/gmail/api/guides/labels) · [Microsoft’s source mailbox analysis guide](https://learn.microsoft.com/en-us/exchange/mailbox-migration/source-mailbox-analysis-google-imap#per-folder-result)
+
+In a test with three fictional Gmail messages, one had both labels and the other two each had one label. Each mapped folder was expected to contain two messages. The checker matched both folders at the same reporting cutoff. The four folder entries describe memberships across the two folders. A comparison of those four entries with the count of three unique source messages has unconfirmed coverage and returns **unverified** when flagged that way. If a comparable export confirms that the first mapped folder has one message, the checker reports an **exception** there.
+
+Have your administrator confirm the approved mapping and use the same count definition on both sides. The checker compares counts per mapped folder. For message-level verification, use the administrator’s separately agreed evidence.
+
 ### When a mailbox is split between primary and archive
 
 One migration administrator [reported a zero in a filtered archive export](https://zaclohrenz.com/posts/2026/aug12/) because the older messages landed in a separately named folder. Use the full destination folder inventory to map each primary or archive folder to its source date range. Compare matching, nonoverlapping ranges using the same timestamp definition and reporting cutoff.
