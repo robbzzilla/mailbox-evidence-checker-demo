@@ -78,4 +78,13 @@ For MSP client work, we confirm the permitted use and price in writing before yo
 
 ### Use the checker on client migrations
 
-[Request MSP client-use terms](mailto:orderreliabilitysprint@gmail.com?subject=Mailbox%20checker%20MSP%20licensing&body=Hi%20Robert%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20request%20terms%20for%20using%20the%20Mailbox%20Evidence%20Checker%20on%20client%20migrations.%0D%0A%0D%0AMSP%20or%20company%20name%3A%0D%0AExpected%20number%20of%20client%20migrations%3A%0D%0AWhich%20teams%20need%20to%20run%20the%20checker%3A%0D%0ADecision-maker%20or%20purchasing%20role%3A%0D%0A%0D%0AI%E2%80%99ll%20keep%20client%20names%2C%20mailbox%20addresses%2C%20and%20exports%20out%20of%20this%20inquiry.). You can also email **orderreliabilitysprint@gmail.com** with the subject **Mailbox checker MSP licensing**. Tell us how many client migrations you expect and who would run the checker. Keep client names and reports out of your first message.
+For one client's Google Workspace to Microsoft 365 cutover, you can
+[request the $250 written review](MAILBOX-REVIEW.md#request-a-written-scope).
+It covers one batch of up to five mailboxes. We agree in writing who can
+share redacted evidence, who accepts the report, and who pays.
+
+For repeat use across client migrations, tell us which team would run the
+checker and whether any client needs a copy. We agree on the allowed use
+and price in writing before you order.
+
+[Request MSP client-use terms](mailto:orderreliabilitysprint@gmail.com?subject=Mailbox%20checker%20MSP%20licensing&body=Hi%20Robert%2C%0D%0A%0D%0AI%E2%80%99d%20like%20to%20request%20terms%20for%20using%20the%20Mailbox%20Evidence%20Checker%20on%20client%20migrations.%0D%0A%0D%0AMSP%20or%20company%20name%3A%0D%0AExpected%20number%20of%20client%20migrations%3A%0D%0AWhich%20teams%20need%20to%20run%20the%20checker%3A%0D%0AWill%20any%20client%20need%20a%20copy%3F%0D%0ADecision-maker%20or%20purchasing%20role%3A%0D%0A%0D%0AI%E2%80%99ll%20keep%20client%20names%2C%20mailbox%20addresses%2C%20and%20exports%20out%20of%20this%20inquiry.). You can also email **orderreliabilitysprint@gmail.com** with the subject **Mailbox checker MSP licensing**. Include the expected number of migrations, who will run the checker, and whether any client needs a copy. Keep client names and reports out of your first message.
