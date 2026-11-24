@@ -30,9 +30,24 @@ destination, cutoff and available report types in your initial inquiry
 so we can confirm whether the batch can be reviewed and quote it in
 writing. Keep mailbox contents with your administrator.
 
+### If you are moving off MI4P-managed Rackspace email
+
+Marketing Ideas For Printers says its managed Rackspace email service
+ends December 31, 2026. Its guide asks customers to complete their
+transfer or provider switch before that date. A transfer to your own
+Rackspace account keeps the existing mailboxes and requires no migration.
+[MI4P's transition guide](https://mi4p.helpjuice.com/e-mail/rackspace-email-changes-%E2%80%93-frequently-asked-questions)
+
+If you are switching to Microsoft 365, Google Workspace or another
+provider, your administrator handles the move. For a separate written
+review, tell me the destination, when the source counts were captured,
+and which counts, skips and alias records your administrator can export.
+I'll confirm which evidence can be compared and quote the review in
+writing.
+
 ## Request a written scope
 
-[Email Robert for a written scope](mailto:orderreliabilitysprint@gmail.com?subject=GitHub%20mailbox%20review&body=Hi%20Robert%2C%0D%0A%0D%0AI'd%20like%20to%20request%20a%20written%20scope%20for%20a%20mailbox%20migration%20evidence%20review.%0D%0A%0D%0ACutover%20date%20and%20time%20zone%3A%0D%0ANumber%20of%20mailboxes%3A%0D%0AAvailable%20reports%20(high-level%20only)%3A%0D%0AWho%20will%20approve%20the%20scope%20and%20payment%3A%0D%0AWhere%20did%20you%20find%20this%20offer%3F%20(optional)%3A).
+[Email Robert for a written scope](mailto:orderreliabilitysprint@gmail.com?subject=GitHub%20mailbox%20review&body=Hi%20Robert%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20a%20written%20scope%20for%20a%20mailbox%20migration%20evidence%20review.%0D%0A%0D%0ASource%20and%20destination%20email%20providers%3A%0D%0ACutover%20date%20and%20time%20zone%3A%0D%0ANumber%20of%20mailboxes%3A%0D%0AAvailable%20reports%20%28high-level%20only%29%3A%0D%0AWho%20will%20approve%20the%20scope%20and%20payment%3A%0D%0AWhere%20did%20you%20find%20this%20offer%3F%20%28optional%29%3A).
 
 If you write from your own email app, send to **orderreliabilitysprint@gmail.com** with the subject **GitHub mailbox review**. Keep credentials, mailbox addresses and actual report files out of the first message. We will agree on the inputs, reviewer and billing terms before work starts.
 
