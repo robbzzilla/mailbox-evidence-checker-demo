@@ -35,11 +35,15 @@ We agree on the batch, review contact, payment terms, and how to share redacted 
 
 ## Request the offline checker for your team
 
-If your team wants to run its own evidence checks, request a one-time **$39 USD** purchase for internal use. The ZIP includes the offline checker, setup instructions, fictional inputs, and an expected JSON report. It requires Python 3.11 or later and reads a JSON file. After unpacking the checker, run `python mailbox_review.py --demo` to reproduce all four fictional results before reviewing your own data. Before ordering, check that your redacted reports can supply the [fields in the example JSON file](sample-review.md#check-your-export-fields). See the [JSON output for that fictional input](sample-result.json) before preparing your own file and running the checker locally.
+The one-time **$39 USD** purchase covers the offline Python checker for one organization’s internal use. The ZIP includes setup instructions, fictional inputs, and an expected JSON report. It requires Python 3.11 or later.
 
-The $39 offer covers one organization checking its own migration. For MSP client work, we confirm the permitted use and price in writing before you order.
+1. [Check the required export fields](sample-review.md#check-your-export-fields) and [read the fictional JSON output](sample-result.json) before ordering.
+2. Use the written purchase request below. We agree on the license and billing in writing, then send the ZIP once payment is confirmed under those terms.
+3. Unpack the ZIP and run `python mailbox_review.py --demo` to reproduce all four fictional results before running the checker on your own redacted JSON.
 
-[Request a written purchase](mailto:orderreliabilitysprint@gmail.com?subject=Mailbox%20checker%20purchase&body=Hi%20Robert%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20a%20%2439%20purchase%20of%20the%20Mailbox%20Evidence%20Checker%20for%20our%20organization.%0D%0A%0D%0AOrganization%3A%0D%0AIntended%20use%20%28own%20migration%20or%20client%20work%29%3A%0D%0APurchase%20or%20billing%20contact%3A%0D%0AWhere%20did%20you%20find%20this%20offer%3F%20%28optional%29%3A) or email **orderreliabilitysprint@gmail.com** with the subject **Mailbox checker purchase**. Say you're interested in the checker and name your purchasing organization. We'll confirm the software terms, billing, and delivery in writing before an order.
+For MSP client work, we confirm the permitted use and price in writing before you order.
+
+[Request a written purchase](mailto:orderreliabilitysprint@gmail.com?subject=Mailbox%20checker%20purchase&body=Hi%20Robert%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20a%20%2439%20purchase%20of%20the%20Mailbox%20Evidence%20Checker%20for%20our%20organization.%0D%0A%0D%0AOrganization%3A%0D%0AIntended%20use%20%28own%20migration%20or%20client%20work%29%3A%0D%0APurchase%20or%20billing%20contact%3A%0D%0AWhere%20did%20you%20find%20this%20offer%3F%20%28optional%29%3A) or email **orderreliabilitysprint@gmail.com** with the subject **Mailbox checker purchase**. Name your purchasing organization, intended use, and billing contact. Keep mailbox records and payment details out of the initial request.
 
 ### Use the checker on client migrations
 
