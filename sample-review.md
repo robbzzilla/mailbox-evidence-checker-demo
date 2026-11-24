@@ -70,6 +70,12 @@ One migration administrator [reported a zero in a filtered archive export](https
 
 For example, if the source has 40 older messages and the destination export reports zero without confirming it covers the mapped archive folder, set `coverage_confirmed` to false. The checker reports **unverified**. A complete, comparable export that confirms zero reports an **exception**. [Exchange Online folder statistics](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-exomailboxfolderstatistics?view=exchange-ps) can include hidden items, so confirm what each report counts before treating the totals as comparable.
 
+### When an alias is missing from a mailbox export
+
+An alias address can belong to a shared mailbox, a group, a mail contact, or another mail-enabled recipient. Ask the administrator which recipient types the export covers and to confirm the destination at the agreed cutoff. [Microsoft documents address conflicts across recipient types](https://learn.microsoft.com/en-us/troubleshoot/exchange/email-alias/proxy-address-being-used).
+
+For fictional alias A10, the expected destination is mailbox M01. If a mailbox-only export shows no match, use `null` and set `coverage_confirmed` to false. If the administrator confirms that A10 instead belongs to group G07, use `G07` with confirmed coverage and the checker will report an **exception**. Keep conflicting exports **unverified** until the administrator resolves them. Use `MISSING_ALIAS` after the administrator establishes absence across the agreed recipient scope.
+
 ## Use this review for your cutover
 
 [Request the $250 written review](README.md#fixed-price-mailbox-migration-review) for one Google Workspace to Microsoft 365 migration batch of up to five mailboxes. You receive a findings report and one recheck. In your first inquiry, include the cutoff and the reports you have. Keep the records with your administrator until we agree on how to share redacted evidence.
