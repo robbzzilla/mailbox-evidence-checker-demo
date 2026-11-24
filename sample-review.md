@@ -76,6 +76,24 @@ An alias address can belong to a shared mailbox, a group, a mail contact, or ano
 
 For fictional alias A10, the expected destination is mailbox M01. If a mailbox-only export shows no match, use `null` and set `coverage_confirmed` to false. If the administrator confirms that A10 instead belongs to group G07, use `G07` with confirmed coverage and the checker will report an **exception**. Keep conflicting exports **unverified** until the administrator resolves them. Use `MISSING_ALIAS` after the administrator establishes absence across the agreed recipient scope.
 
+### When the migration status field disappears
+
+Microsoft lists `MailboxMoveStatus` among the properties scheduled to
+stop appearing in results from `Get-Mailbox -Migration` and
+`New-Mailbox -Migration` beginning November 15, 2026. It lists
+December 15 for blocking configuration of affected properties through
+`New-Mailbox -Migration`. These dates matter when an older script
+supplies evidence for migration sign-off.
+[Microsoft's migration cmdlet notice](https://learn.microsoft.com/en-us/exchange/get-new-mailbox-migration)
+
+If a fictional mailbox export stops returning that field, leave its
+migration status unverified. Ask your administrator for the current
+status and cutoff from the authorized migration-user report. Compare
+folder counts, migration skips and alias destinations in separate
+reports at the same cutoff. The offline checker reads the JSON you
+prepare from those reports.
+[Microsoft's migration-user statistics reference](https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-migrationuserstatistics?view=exchange-ps)
+
 ## Review an Amazon WorkMail cutover
 
 AWS ends support for Amazon WorkMail on March 31, 2027. Before retiring the source, have your administrator capture folder counts and alias mappings for the users, groups and resources in your migration. Compare the source and destination evidence at an agreed cutoff. [AWS end-of-support notice](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html) · [AWS alias inventory reference](https://docs.aws.amazon.com/workmail/latest/APIReference/API_ListAliases.html)
