@@ -57,7 +57,28 @@ Moving from Amazon WorkMail? [See the tested cutover example](sample-review.md#r
 2. Use the written purchase request below. We agree on the license and billing in writing, then send the ZIP once payment is confirmed under those terms.
 3. Unpack the ZIP and run `python mailbox_review.py --demo` for all four fictional checks. To reproduce the two-check example with the purchased checker, save the public sample input alongside the script and run `python mailbox_review.py --input sample-input.json`.
 
-**Verify the delivered file.** The current paid archive is
+### Prepare folder counts from a spreadsheet
+
+Use the free [CSV preparation script](prepare_folder_counts.py) with Python 3.11 or later. Once your administrator has mapped folders, redacted identifiers, and reviewed coverage, save a UTF-8 CSV with these headers. The following rows are fictional.
+
+```csv
+mailbox,item,coverage_confirmed,source_count,approved_exclusions,target_count,skipped_items
+M01,F01,true,100,2,98,0
+M01,F02,true,100,2,98,1
+M01,F03,false,100,2,,
+```
+
+Save the script and CSV in the same folder. Run it with the actual cutoff and timezone offset for each report. Choose a new output filename.
+
+```text
+python prepare_folder_counts.py counts.csv --source-cutoff 2026-11-11T18:00:00Z --target-cutoff 2026-11-11T12:00:00-06:00 --output counts.json
+```
+
+The script prepares folder rows locally. Leave an unknown target count or skip count blank. Enter coverage as `true` only when the administrator has verified it. Prepare alias checks separately using the [JSON sample](sample-input.json). To compare the folder batch with the paid checker, run `python mailbox_review.py --input counts.json` from the folder containing both files.
+
+### Verify the delivered file
+
+The current paid archive is
 `Mailbox Evidence Checker.zip` (4,074 bytes). Its SHA-256 is
 `7ad755c11254fdca316120316a60c782185a3de133fc4d33f5762ab99fd7eb44`. This fingerprint is for the purchased checker.
 The fictional sample ZIP linked above has its own fingerprint.
